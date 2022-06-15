@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip-Path Transform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Scroll Down</h3>
+    <h2 class="text">Scroll To See Magic </h2>
+    <section>
+        <h2 class="innerText">Scroll To See Magic </h2>
+    </section>
+    <div class="container">
+        <h2>Also Visit to my Github Profile for More Project</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nobis rem quaerat officiis, at laudantium?
+            Explicabo aliquid voluptatem vitae quisquam aperiam eum eveniet accusantium sit ratione, veniam facere
+            suscipit ducimus cum dolore dolorem inventore vero autem eos dignissimos quidem vel? Hic voluptatum quam
+            eaque dolor? Nemo et vitae molestias ullam modi. Atque temporibus et ratione obcaecati! Officiis
+            consequuntur, corrupti eaque eius molestias assumenda fuga ipsum! Inventore excepturi harum similique veniam
+            aliquid rem neque dolorem quas deserunt accusantium, numquam quos, maiores porro beatae vero veritatis esse
+            rerum, iste quo. Dignissimos eum, reprehenderit consequatur praesentium laboriosam necessitatibus, at
+            placeat ratione quam aliquam quaerat? Nesciunt, facilis commodi ducimus officiis similique dicta nemo
+            cupiditate numquam molestias dolor repellat natus recusandae possimus eum adipisci doloribus esse aspernatur
+            non consectetur necessitatibus blanditiis laboriosam ab. Minus, laboriosam ab aut ea voluptatem temporibus
+            officiis molestias recusandae! Eligendi maiores voluptatibus nulla vero facere dolorem minus sequi. Quidem
+            quod expedita reiciendis ducimus? Dolorem nemo non iste ex hic ullam sequi ab labore autem voluptas omnis
+            consequatur blanditiis porro ad quaerat voluptates quos dignissimos, harum ut obcaecati culpa corrupti sint
+            unde possimus! Nesciunt doloremque sunt quae adipisci, possimus libero vero nam reiciendis accusamus animi
+            assumenda officia quis, officiis ad quisquam voluptate, ullam odio. Nesciunt enim deserunt fugiat nam
+            voluptas consectetur, officia distinctio, aut reprehenderit suscipit, ullam voluptatum doloribus. Tempora,
+            dolor. Ea qui distinctio accusamus consectetur mollitia, ullam laudantium, doloremque soluta quaerat
+            provident unde nemo nisi obcaecati quis in non rem numquam animi corporis minima. Placeat nihil explicabo
+            tempora adipisci modi tempore perspiciatis odio error obcaecati neque, sapiente voluptas accusamus commodi
+            aut deserunt dolores officia numquam unde reiciendis dolorem iste mollitia esse rem? Corporis doloribus sint
+            inventore voluptates omnis tenetur officia? Delectus amet quos suscipit error quibusdam voluptates? Officiis
+            nisi porro molestias, totam debitis quisquam inventore dolores, possimus repellat sit eligendi odit laborum
+            aperiam vitae aliquid ipsa natus ducimus beatae, nemo exercitationem harum velit eius. At nostrum, quisquam
+            corporis nesciunt impedit atque recusandae dolores aut, eos exercitationem unde! Fuga nobis eos iure quod,
+            modi optio soluta reprehenderit.</p>
+    </div>
+
+    <script>
+        let section = document.querySelector('section');
+        let text = document.querySelector('.text');
+        let innerText = document.querySelector('.innerText');
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+        section.style.clipPath = "circle(" + value + "px at center center)";
+        text.style.left=100-value /5 + '%';
+        innerText.style.left=100-value/5 + '%';
+        })
+       
+    </script>
+</body>
+
+</html>
