@@ -41,6 +41,7 @@ section{
     width: 100%;
     text-align: center;
 
+
 }
 .text{
     position: fixed;
@@ -54,7 +55,8 @@ section{
     width: 100%;
     color: transparent;
     text-align: center;
-    -webkit-text-stroke:1px #0e112e
+    -webkit-text-stroke:1px #fff;
+
 }
 .container{
     position: relative;
